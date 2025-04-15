@@ -1,0 +1,28 @@
+*{
+    padding: 0;
+    margin: 0;
+
+}
+#cyc{
+    background-color: green;
+    border-radius: 50%;
+}
+#bar{
+    background-color: black;
+    width: 1fr;
+    align-items: inline;
+    color: aliceblue;
+    height: 60px;
+}
+button{
+    background-color: #f08804;
+}
+.in{
+    color: #f08804;
+    font-size: 25px;
+    
+}
+a{
+    margin-right: 200px;
+    color: aliceblue;
+}

@@ -1,28 +1,21 @@
-*{
-    padding: 0;
-    margin: 0;
-
+div{
+    height: 50px;
+    width: 50px;
+background-color: aquamarine;
 }
-#cyc{
-    background-color: green;
-    border-radius: 50%;
+@media (max-width:300px){
+    div{background-color:red;
+    }
 }
-#bar{
-    background-color: black;
-    width: 1fr;
-    align-items: inline;
-    color: aliceblue;
-    height: 60px;
+@media (min-width:300px) and (max-width:400px){
+    div{background-color:blue;
+    }
 }
-button{
-    background-color: #f08804;
+@media (min-width:400px) and (max-width:500px){
+    div{background-color:green;
+    }
 }
-.in{
-    color: #f08804;
-    font-size: 25px;
-    
-}
-a{
-    margin-right: 200px;
-    color: aliceblue;
+@media (min-width:500px){
+    div{background-color:pink;
+    }
 }

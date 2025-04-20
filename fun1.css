@@ -1,11 +1,14 @@
+body{
+    background-color: black;
+    padding-bottom: 100rem;
+}
 div{
     display: flex;
     position: relative;
     display: inline-flex;
-transition: all ease-in-out 0.02s ;
-translate:400px 400px;
-
+transition: all ease-out ;
 margin: 0;
+translate:400px 400px;
 }
 #c,#b,#a{
     height: 500px;
@@ -13,22 +16,44 @@ margin: 0;
     display: flex;
     justify-items: center;
     align-items: center;
-    background-color: blue;
+    background-color:white;
 }
-div:hover{
+div:active{
     #a{
         background-color: rgb(187, 247, 8);
         transform: rotate(360deg);
+        border-radius: 50%;
         transition-duration: 1s;
     }
     #b{
         background-color: rgb(247, 8, 8);
         transform: rotate(360deg);
+        border-radius: 50%;
         transition-duration: 1s;
     }
     #c{
         background-color: rgb(8, 239, 247);
         transform: rotate(360deg);
+        border-radius: 50%;
         transition-duration: 1s;
     }
+    div{
+        translate:-400px -400px;
+
+    }
+
+    #c,#b,#a{
+
+        height: 40px;
+        width: 40px;
 }
+
+}
+
+/* @keyframes apple {
+0%{
+    translate:400px 400px;
+}
+    100%{
+        animation-name: apple;    }
+} */

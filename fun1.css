@@ -1,59 +1,18 @@
-body{
-    background-color: black;
-    padding-bottom: 100rem;
+.top{
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    border: 30px #ff0022 solid;
+    border-top:30px  #fbff00 solid;
+    animation: spin  1s ease-in 0s infinite normal;
 }
-div{
-    display: flex;
-    position: relative;
-    display: inline-flex;
-transition: all ease-out ;
-margin: 0;
-translate:400px 400px;
+@keyframes spin {
+    0% { transform: rotate(0deg);}
+    25%{
+        border-color: #4f1119;
+        border-top:30px  #ffd900 solid;}
+75%{
+        border-color: #3c68ed;
+        border-top:30px  #ffdd00 solid;}
+    100% { transform: rotate(360deg); }
 }
-#c,#b,#a{
-    height: 500px;
-    width: 500px;
-    display: flex;
-    justify-items: center;
-    align-items: center;
-    background-color:white;
-}
-div:active{
-    #a{
-        background-color: rgb(187, 247, 8);
-        transform: rotate(360deg);
-        border-radius: 50%;
-        transition-duration: 1s;
-    }
-    #b{
-        background-color: rgb(247, 8, 8);
-        transform: rotate(360deg);
-        border-radius: 50%;
-        transition-duration: 1s;
-    }
-    #c{
-        background-color: rgb(8, 239, 247);
-        transform: rotate(360deg);
-        border-radius: 50%;
-        transition-duration: 1s;
-    }
-    div{
-        translate:-400px -400px;
-
-    }
-
-    #c,#b,#a{
-
-        height: 40px;
-        width: 40px;
-}
-
-}
-
-/* @keyframes apple {
-0%{
-    translate:400px 400px;
-}
-    100%{
-        animation-name: apple;    }
-} */
